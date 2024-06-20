@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Homepage from './pages/homepage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {/* Umfasst die gesamte App, damit alle untergeordneten Komponenten Zugriff auf das Routing Paket haben */}
+      
+        <Routes>
+          {/* Innerhalb der Routes befinden sich die einzelnen Routen bzw Seiten*/}
+          <Route path="/" element={<Homepage/>} />
+          <Route path="/" element={<Homepage/>} />
+
+        </Routes>
+     
+     
+    </BrowserRouter>
   );
 }
 

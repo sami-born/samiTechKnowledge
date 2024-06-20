@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Barlow-Light';
+  src: url('./fonts/Barlow-Light.ttf');
+} 
+
+.mainpage {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-family: "Barlow-Light";
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgb(98, 98, 50);
+}
+
+
+
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdownContent{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  border: solid;
+  border-color: rgb(166, 166, 84);
+  border-radius: 18px;
+  background-color: rgb(235, 235, 225);
+  color: rgb(35, 112, 147);
+  font-family: "Barlow-Light";
+  font-size: 25px;
+  
+}
+
+/* How the menu of the dropbox is displayed */
+.dropdownContent a {
+  display: block;
+  padding: 10px 30px 20px 30px;
+}
+
+/* Display set to none to not display dropdown before hovering and Z index to 1, having it infront of everything */
+.dropdownMenu a:hover {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+/* Function for dropdown */
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+
+
+
+body{
+  background-color: rgb(166, 166, 84);
+} 

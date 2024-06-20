@@ -1,0 +1,22 @@
+
+.content {
+    background-color: rgb(235, 235, 225); 
+    margin: 20px 40px 20px 40px;
+}
+
+.allbuttons {
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.button {
+    display: flex;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
